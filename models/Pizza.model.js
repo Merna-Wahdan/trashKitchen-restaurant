@@ -30,10 +30,13 @@ const pizzaSchema = new Schema({
     size: {
       type: String,
       enum: ["Small", "Medium", "Large"],
+    },
+    chef: {
+      type: String,
     }
   });
   
   // Create Model
   const Pizza = mongoose.model("Pizza", pizzaSchema);
   
-  module.exports = Pizza
+  module.exports = Pizza;

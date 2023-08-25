@@ -39,7 +39,7 @@ mongoose
 })
 .then(() => {
     console.log(`your pizza's price is updated`)
-    mongoose.connection.close()
+    // mongoose.connection.close()
     
 })
   .catch((error) => {
